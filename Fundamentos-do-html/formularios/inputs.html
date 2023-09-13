@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Inputs no HTML</title>
+  </head>
+  <body>
+    <h1>Inputs no HTML</h1>
+    <form>
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        placeholder="Ex: Andre Costa"
+      />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required />
+      <br /><br />
+
+      <label>Gênero:</label>
+      <input type="radio" name="genero" id="masculino" value="m" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="genero" id="feminino" value="f" />
+      <label for="masculino">Feminino</label>
+      <br /><br />
+
+      <label>Interesses:</label><br />
+      <input type="checkbox" id="backend" name="interesses" value="backend" />
+      <label for="backend">Back-end</label>
+      <input type="checkbox" id="frontend" name="interesses" value="frontend" />
+      <label for="frontend">Front-end</label>
+      <input type="checkbox" id="mobile" name="interesses" value="mobile" />
+      <label for="mobile">Mobile</label>
+      <br /><br />
+
+      <label for="dataDeNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataDeNascimento" name="nascimento" />
+      <br /><br />
+
+      <label for="fotoDePerfil">Foto de Perfil:</label>
+      <input type="file" name="avatar" id="fotoDePerfil" />
+      <br /><br />
+
+      <label for="situacao">Situação Atual:</label>
+      <select name="situcao" id="situacao">
+        <option value="" selected disabled>Selecione um das opções....</option>
+        <option value="estudante">
+          Estudando para me tornar um programador
+        </option>
+        <option value="estagiario">Atuando como estagiário/trainee</option>
+        <option value="junior">Atuando como desenvolvedor júnior</option>
+        <option value="pleno">Atuando como desenvolvedor pleno</option>
+        <option value="senior">Atuando como desenvolvedor sênior</option>
+      </select>
+      <br /><br />
+
+      <label for="sobre">Sobre Mim:</label>
+      <textarea
+        name="sobre"
+        id="sobre"
+        cols="40"
+        rows="6"
+        placeholder="Fale um pouco sobre você..."
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
