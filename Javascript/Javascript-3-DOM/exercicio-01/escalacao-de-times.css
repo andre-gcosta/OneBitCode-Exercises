@@ -1,0 +1,18 @@
+h1 {
+    width: 100%;
+    height: 100px;
+}
+
+#mudar-escalacao {
+    background-color: lightgray;
+    width: 40%;
+    display: inline-block;
+}
+
+#listar-escalacao {
+    
+    background-color: lightgreen;
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}

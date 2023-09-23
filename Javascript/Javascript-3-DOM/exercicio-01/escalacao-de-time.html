@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação de Time</title>
+    <script src="./escalacao-de-time.js"></script>
+    <link rel="stylesheet" href="./escalacao-de-times.css">
+</head>
+<body>
+    <h1>Escalação de Time</h1>
+    
+    <div id="mudar-escalacao" class="container-escalacao">
+        <h2>Escalar Jogador</h1>
+            <ul id="escalar-jogador">
+                <li>
+                    <label for="posicao-jogador">Posição do jogador: </label>
+                    <input type="text" id="posicao-jogador" name="posicao-jogador" required></input>
+                </li>
+                <li>
+                    <label for="nome-jogador">Nome do jogador: </label>
+                    <input type="text" id="nome-jogador" name="nome-jogador" required></input>
+                </li>
+                <li>
+                    <label for="camisa-jogador">Número da camisa do jogador: </label>
+                    <input type="text" id="camisa-jogador" name="camisa-jogador" required></input>
+                </li>
+                <button type="submit" onclick="escalar()">Escalar</button>
+            </ul>
+
+        <h2>Remover Jogador</h1>
+        <ul id="remover-jogador">
+            <li>
+                <label for="camisa-jogador">Número da camisa do jogador: </label>
+                <input type="text" id="camisa-jogador" name="camisa-jogador"></input>
+            </li>
+            <button onclick="remover()">Remover</button>
+        </ul>
+    </div>
+
+    <div id="listar-escalacao" class="container-escalacao">
+        <h2>Escalação</h2>
+        <ul id="lista-jogadores">
+        </ul>
+    </div>
+
+        
+    
+</body>
+</html>
