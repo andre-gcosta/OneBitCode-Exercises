@@ -1,0 +1,33 @@
+body {
+    background-image: url("images/C360_2012-11-19-17-59-02.jpg");
+    background-size: cover;
+}
+
+.welcome {
+    background-color: #248030;
+    color: #eaeaea;
+    /* border: solid 0.5px #eaeaea; */
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.about {
+    background-color: #ffff8c;
+    /* border: solid 0.5px #eaeaea; */
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#send {
+    background-color: #248030;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+footer {
+    background-color:#eaeaea;
+    /* border: solid 0.5px #eaeaea; */
+    border-radius: 5px;
+    margin-top: 20px;
+}

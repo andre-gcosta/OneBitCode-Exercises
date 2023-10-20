@@ -1,0 +1,64 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "name": "sorvete",
+      "amount": 15
+    },
+    {
+      "name": "frutas",
+      "amount": 20,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "arroz",
+      "amount": 15
+    },
+    {
+      "id": 4,
+      "name": "mamao",
+      "amount": 20
+    },
+    {
+      "id": 5,
+      "name": "jogo tabuleiro banco imobiliario",
+      "amount": 120
+    },
+    {
+      "id": 6,
+      "name": "yogurte",
+      "amount": 5
+    },
+    {
+      "id": 7,
+      "name": "feijao",
+      "amount": 12
+    },
+    {
+      "id": 8,
+      "name": "freela",
+      "amount": 500
+    },
+    {
+      "id": 9,
+      "name": "abacate",
+      "amount": 8
+    },
+    {
+      "id": 10,
+      "name": "bonus",
+      "amount": 150
+    },
+    {
+      "id": 11,
+      "name": "salario",
+      "amount": 3200
+    },
+    {
+      "id": 12,
+      "name": "novo",
+      "amount": 1234
+    }
+  ]
+}
