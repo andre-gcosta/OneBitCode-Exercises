@@ -1,0 +1,21 @@
+#gray {
+    color: gray;
+}
+
+[class="blue"] {
+    color: black;
+}
+
+.blue {
+    color: blue;
+}
+
+body > h1 {
+    color: green;
+    color: purple !important;
+}
+
+h1 {
+    color: red;
+    color: pink !important;
+}

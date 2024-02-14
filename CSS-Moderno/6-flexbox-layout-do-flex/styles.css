@@ -6,6 +6,17 @@
 .container {
     background-color: darkgray;
     min-height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    
+    /* row-gap: 15px; */
+    /* column-gap: 15px; */
+    gap: 0px 15px;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
 }
 .item {
     width: 200px;
