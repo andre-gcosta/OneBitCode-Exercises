@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Rumo a marte - OnebitX</title>
+</head>
+<body class="d-flex">
+    <div class="bg-image cover no-repeat d-flex text-center" width="100%">
+        <img src="images/backgroundLp.png" class="img-fluid bg-image" alt="capa-onebitx" style="z-index: -1;">
+        <form class="card px-3" style="width: 26rem">
+            <img class="img-fluid" src="images/logo-obc-2021-darkbg.png" alt="logo-obc">
+            <label for="validationCustomUsername">1 - Primeiro nome: </label>
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend" style="height: 100%;">teste</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            </div>
+            <label for="validationCustomUsername">2 - Segundo nome: </label>
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend" style="height: 100%;">teste</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
