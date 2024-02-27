@@ -9,11 +9,52 @@ body {
 }
 
 .container1 {
-  background-image: url(./../imagens/01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+}
+.container1.homepage-01 {
+  background-image: url(./../imagens/home/01.jpg);
+}
+.container1.homepage-02 {
+  background-image: url(./../imagens/home/03.jpg);
+}
+.container1.homepage-03 {
+  background-image: url(./../imagens/home/02.gif);
+}
+.container1.homepage-04 {
+  background-image: url(./../imagens/home/04.jpg);
+}
+.container1.falcon9page-01 {
+  background-image: url(./../imagens/falcon9/01.jpg);
+}
+.container1.falcon9page-02 {
+  background-image: url(./../imagens/falcon9/02.jpg);
+}
+.container1.falcon9page-03 {
+  background-image: url(./../imagens/falcon9/03.jpg);
+}
+.container1.falcon9page-04 {
+  background-image: url(./../imagens/falcon9/08.jpg);
+}
+.container1.falcon9page-05 {
+  background-image: url(./../imagens/falcon9/09.jpg);
+}
+.container1.humanflightpage-01 {
+  background-image: url(./../imagens/humanflight/01.jpg);
+}
+.container1.humanflightpage-02 {
+  background-image: url(./../imagens/humanflight/02.jpg);
+}
+.container1.humanflightpage-03 {
+  background-image: url(./../imagens/humanflight/03.jpg);
+}
+.container1.humanflightpage-04 {
+  background-image: url(./../imagens/humanflight/04.jpg);
+}
+.container1.humanflightpage-05 {
+  background-image: url(./../imagens/humanflight/05.jpg);
 }
 .container1 .navbar-brand-logo {
   width: 240px;
@@ -25,30 +66,6 @@ body {
   font-weight: bold;
 }
 
-.container2 {
-  background-image: url(./../imagens/03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-}
-
-.container3 {
-  background-image: url(./../imagens/02.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-}
-
-.container4 {
-  background-image: url(./../imagens/04.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-}
-
 .titlePadding {
   padding-top: 200px;
 }
@@ -57,14 +74,95 @@ body {
   margin-top: 3rem;
   padding: 15px 35px;
 }
+.titlePadding .titlePadding-moreButton-end {
+  border: 2px solid;
+  margin-top: 0px;
+  padding: 15px 35px;
+}
 .titlePadding .titlePadding-arrowDown {
   width: 90px;
   justify-self: center;
 }
+.titlePadding .titlePadding-moreButton-humanFlight {
+  border: 1px solid;
+  margin-top: 1.5rem;
+  padding: 15px 35px;
+}
+
+.titlePadding-description {
+  text-align: center;
+  width: 800px;
+  margin: 77px auto 93px auto;
+  padding: 0;
+  font-size: 20px;
+  color: #d8d8d8;
+}
+.titlePadding-description .color-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.titlePaddingHumanFlight {
+  padding-top: 30vh;
+  margin-left: 5vw;
+  width: auto;
+}
+.titlePaddingHumanFlight .h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.titlePaddingHumanFlightRightSide {
+  padding-top: 30vh;
+  margin-left: 53vw;
+  max-width: fit-content;
+}
+
+.titleHumanFlight {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.titleHumanFlight h1 {
+  font-size: 120px;
+}
+.titleHumanFlight p {
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.titleHumanFlight img {
+  padding-top: 40px;
+  width: 130px;
+}
+
+.container-humanFlight-footer {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.container-humanFlight-footer .email {
+  color: #b9b9b9;
+  text-decoration: none;
+}
+.container-humanFlight-footer .email:hover {
+  color: #ffffff;
+}
+.container-humanFlight-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.container-humanFlight-footer a:hover {
+  color: #000000;
+}
 
 .footer {
   text-align: center;
-  margin: 2.3rem auto;
+  margin-bottom: 65px;
+  margin-top: 65px;
   font-size: 12px;
   font-weight: 500;
 }

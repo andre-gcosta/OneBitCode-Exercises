@@ -10,7 +10,51 @@ body {
 }
 
 .container1 {
-    background-image: url(./../imagens/01.jpg);
+    &.homepage-01 {
+        background-image: url(./../imagens/home/01.jpg);
+    }
+    &.homepage-02 {
+        background-image: url(./../imagens/home/03.jpg);
+    }
+    &.homepage-03 {
+        background-image: url(./../imagens/home/02.gif);
+    }
+    &.homepage-04 {
+        background-image: url(./../imagens/home/04.jpg);
+    }
+
+    &.falcon9page-01 {
+        background-image: url(./../imagens/falcon9/01.jpg);
+    }
+    &.falcon9page-02 {
+        background-image: url(./../imagens/falcon9/02.jpg);
+    }
+    &.falcon9page-03 {
+        background-image: url(./../imagens/falcon9/03.jpg);
+    }
+    &.falcon9page-04 {
+        background-image: url(./../imagens/falcon9/08.jpg);
+    }
+    &.falcon9page-05 {
+        background-image: url(./../imagens/falcon9/09.jpg);
+    }
+
+    &.humanflightpage-01 {
+        background-image: url(./../imagens/humanflight/01.jpg);
+        
+    }
+    &.humanflightpage-02 {
+        background-image: url(./../imagens/humanflight/02.jpg);
+    }
+    &.humanflightpage-03 {
+        background-image: url(./../imagens/humanflight/03.jpg);
+    }
+    &.humanflightpage-04 {
+        background-image: url(./../imagens/humanflight/04.jpg);
+    }
+    &.humanflightpage-05 {
+        background-image: url(./../imagens/humanflight/05.jpg);
+    }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,30 +70,6 @@ body {
     }
 }
 
-.container2 {
-    background-image: url(./../imagens/03.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-}
-
-.container3 {
-    background-image: url(./../imagens/02.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-}
-
-.container4 {
-    background-image: url(./../imagens/04.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-}
-
 .titlePadding {
     padding-top: 200px;
     .titlePadding-moreButton {
@@ -57,15 +77,97 @@ body {
         margin-top: 3rem;
         padding: 15px 35px;
     }
+    .titlePadding-moreButton-end {
+        border: 2px solid;
+        margin-top: 0px;
+        padding: 15px 35px;
+    }
     .titlePadding-arrowDown {
         width: 90px;
         justify-self: center;
     }
+    .titlePadding-moreButton-humanFlight {
+        border: 1px solid;
+        margin-top: 1.5rem;
+        padding: 15px 35px;
+    }
+}
+
+.titlePadding-description {
+    text-align: center;
+    width: 800px;
+    margin: 77px auto 93px auto;
+    padding: 0;
+    font-size: 20px;
+    color: $color-description;
+    .color-link{
+        color: $color;
+        text-decoration: none;
+    }       
+}
+.titlePaddingHumanFlight {
+    padding-top: 30vh;
+    margin-left: 5vw;
+    width: auto;
+    // max-width: fit-content;
+    .h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+}
+
+.titlePaddingHumanFlightRightSide {
+    padding-top: 30vh;
+    margin-left: 53vw;
+    max-width: fit-content;
+}
+
+.titleHumanFlight {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-size: 120px;
+    }
+    p {
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    img {
+        padding-top: 40px;
+        width: 130px;
+    }
+}
+
+.container-humanFlight-footer {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    .email {
+        color: $color-hover;
+        text-decoration: none;
+        &:hover {
+            color: $color;
+        }
+    }
+    a {
+        color: $color;
+        text-decoration: none;
+        &:hover {
+            color: $background-color;
+        }
+    }
+
 }
 
 .footer {
     text-align: center;
-    margin: 2.3rem auto;
+    margin-bottom: 65px;
+    margin-top: 65px;
     font-size: 12px;
     font-weight: 500;
     span {
