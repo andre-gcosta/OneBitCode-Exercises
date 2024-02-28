@@ -35,11 +35,38 @@ body {
 .container1.falcon9page-03 {
   background-image: url(./../imagens/falcon9/03.jpg);
 }
+.container1.falcon9page-11 {
+  background-image: url(./../imagens/falcon9/04.jpg);
+}
+.container1.falcon9page-12 {
+  background-image: url(./../imagens/falcon9/05.jpg);
+}
+.container1.falcon9page-13 {
+  background-image: url(./../imagens/falcon9/06.jpg);
+}
+.container1.falcon9page-14 {
+  background-image: url(./../imagens/falcon9/07.jpg);
+}
 .container1.falcon9page-04 {
   background-image: url(./../imagens/falcon9/08.jpg);
 }
 .container1.falcon9page-05 {
   background-image: url(./../imagens/falcon9/09.jpg);
+}
+.container1.falcon9page-06 {
+  background-image: url(./../imagens/falcon9/10.jpg);
+}
+.container1.falcon9page-07 {
+  background-image: url(./../imagens/falcon9/11.jpg);
+}
+.container1.falcon9page-08 {
+  background-image: url(./../imagens/falcon9/12.jpg);
+}
+.container1.falcon9page-09 {
+  background-image: url(./../imagens/falcon9/13.jpg);
+}
+.container1.falcon9page-10 {
+  background-image: url(./../imagens/falcon9/14.jpg);
 }
 .container1.humanflightpage-01 {
   background-image: url(./../imagens/humanflight/01.jpg);
@@ -139,8 +166,80 @@ body {
   width: 130px;
 }
 
+.falcon9-title-container {
+  height: 79.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.falcon9-title {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 514;
+  text-align: center;
+}
+.falcon9-title .falcon9-title-h1 {
+  font-size: 90px;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: -10px;
+}
+
+.numbers-status-falcon9 {
+  display: flex;
+  text-align: center;
+  padding: 10vh 15px;
+  margin: 0px;
+}
+.numbers-status-falcon9 .numbers-status-falcon9-h1 {
+  font-size: 96px;
+}
+.numbers-status-falcon9 .numbers-status-falcon9-description {
+  font-size: 20px;
+}
+
+.falcon9-description {
+  max-width: 650px;
+  margin-left: 14vw;
+  padding-top: 26vh;
+  font-size: 22px;
+  line-height: 3rem;
+}
+
+.table-items-falcon9 {
+  padding-top: 30vh;
+  font-size: 16px;
+  margin-left: 10vw;
+  max-width: 500px;
+}
+
+.table-container tr {
+  color: white;
+}
+.table-container .table-td-end {
+  text-align: end;
+}
+
+.carrousel-description-space {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 35px;
+}
+
+.carrousel-description {
+  background-color: #000000;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
 .container-humanFlight-footer {
-  height: 80vh;
+  padding-top: 100px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
 }
