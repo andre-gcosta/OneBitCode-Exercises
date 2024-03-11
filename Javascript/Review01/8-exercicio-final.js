@@ -2,8 +2,8 @@ vacancies = []
 
 function viewAllVacancies() {
     const allVacancies = vacancies.map(function(element, index) {
-        let name = element.name
-        let registered = element.registered
+        const name = element.name
+        const registered = element.namesRegistered.length??0
         return 'Index: ' + index + '\nNome: ' + name + '\nCandidatos registrados: ' + registered + '\n\n'
     })
     window.alert('Lista de vagas: ' + '\n\n' + allVacancies)
@@ -14,7 +14,6 @@ function createNewVacancy (name, description, limitDate) {
         name: name,
         description: description,
         limitDate: limitDate,
-        registered: 0,
         namesRegistered: []
     }
     const confirm = window.prompt('Deseja criar a vaga ' + name + '?\n\nDescrição: ' + description + '\nData limite: ' + limitDate + '\n\nDigite "Sim".')
@@ -25,7 +24,7 @@ function createNewVacancy (name, description, limitDate) {
 }
 
 function deleteVacancy() {
-    let vacancyIndex = window.prompt('Digite o index da vaga: ')
+    const vacancyIndex = window.prompt('Digite o index da vaga: ')
     if (vacancies[vacancyIndex]) {
         const confirm = window.prompt('Confirma? (Sim)')
         if (confirm == "Sim") {
@@ -36,43 +35,40 @@ function deleteVacancy() {
 }
 
 function viewVacancy() {
-    let vacancyIndex = window.prompt('Digite o index da vaga: ')
+    const vacancyIndex = window.prompt('Digite o index da vaga: ')
     if (vacancies[vacancyIndex]) {
-        let name = vacancies[vacancyIndex].name
-        let description = vacancies[vacancyIndex].description
-        let limitDate = vacancies[vacancyIndex].limitDate
-        let registered = vacancies[vacancyIndex].registered
-        let namesRegisteredString= ''
-        let arrayToString = vacancies[vacancyIndex].namesRegistered.forEach(function(element, index, array) {
-            namesRegisteredString += '-' + element + '\n'
-        });
+        const name = vacancies[vacancyIndex].name
+        const description = vacancies[vacancyIndex].description
+        const limitDate = vacancies[vacancyIndex].limitDate
+        const namesRegistered = vacancies[vacancyIndex].namesRegistered
+        const registered = vacancies[vacancyIndex].namesRegistered.length??0
+        const allRegistered = namesRegistered.reduce(function(accum, element) {return accum + '-' + element + '\n'}, '')
         window.alert('Index: ' + vacancyIndex + '\nNome da vaga: ' + name + '\nDescrição da vaga: ' + description + '\nData limite: ' + limitDate + '\n\nCandidatos cadastrados: ' +
-        registered + '\nNome dos candidatos:\n' + namesRegisteredString
+        registered + '\nNome dos candidatos:\n' + allRegistered
         )
     } else {window.alert("A vaga digitada não foi encontrada. Tente novamente")}
 }
 
 function newCandidate() {
-    let name = window.prompt('Digite o nome do candidato: ')
-    let vacancyIndex = window.prompt('Digite o index da vaga: ')
+    const name = window.prompt('Digite o nome do candidato: ')
+    const vacancyIndex = window.prompt('Digite o index da vaga: ')
     if (vacancies[vacancyIndex]) {
         const confirm = window.prompt('Você deseja adicionar ' + name + ' à vaga de ' + vacancies[vacancyIndex].name + ' (Index: ' + vacancyIndex + ')? \nDigite "Sim"')
         if (confirm == "Sim") {
             vacancies[vacancyIndex].namesRegistered.push(name)
-            vacancies[vacancyIndex].registered = vacancies[vacancyIndex].namesRegistered.length
             window.alert("Candidato registrado com sucesso!")
         } else {window.alert("Operação cancelada")}
     } else {window.alert("A vaga digitada não foi encontrada. Tente novamente")}
 }
 
 function mainProgram() {
-    let selectOption = window.prompt('Menu: \n\n1-Listar vagas disponíveis \n2-Criar nova vaga \n3-Visualizar uma vaga \n4-Inscrever um candidato em uma vaga \n5-Excluir uma vaga \n6-Sair')
+    const selectOption = window.prompt('Menu: \n\n1-Listar vagas disponíveis \n2-Criar nova vaga \n3-Visualizar uma vaga \n4-Inscrever um candidato em uma vaga \n5-Excluir uma vaga \n6-Sair')
     switch (selectOption) {
         case '1': {viewAllVacancies(); break;}
         case '2': {
-            let name = window.prompt('Digite o nome da vaga')
-            let description = window.prompt('Digite a descrição da vaga')
-            let limitDate = window.prompt('Digite a data limite da vaga')
+            const name = window.prompt('Digite o nome da vaga')
+            const description = window.prompt('Digite a descrição da vaga')
+            const limitDate = window.prompt('Digite a data limite da vaga')
             createNewVacancy(name, description, limitDate)
             break
         }
