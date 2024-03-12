@@ -1,12 +1,6 @@
 vacancies = []
 
 function viewAllVacancies() {
-    // const allVacancies = vacancies.map(function(element, index) {
-    //     const name = element.name
-    //     const registered = element.namesRegistered.length??0
-    //     return 'Index: ' + index + '\nNome: ' + name + '\nCandidatos registrados: ' + registered + '\n\n'
-    // })
-    // window.alert('Lista de vagas: ' + '\n\n' + allVacancies)
     const allVacancies = vacancies.reduce(function(accum, element, index) {
         accum += 'Index: ' + index
         accum += '\nNome: ' + element.name
