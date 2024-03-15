@@ -1,0 +1,1 @@
+const jogador document.getElementById()

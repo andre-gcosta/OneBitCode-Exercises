@@ -1,0 +1,1 @@
+export const Subtitle = () => <h2>3 + 3 is {3 + 3}</h2>
